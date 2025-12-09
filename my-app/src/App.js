@@ -11,7 +11,7 @@ function App() {
   <div className="container my-3">
     <TextForm heading ="enter the text to analyze belowa"/>
     </div>
-      <button className="btn btn-primary">Convert to uppercase</button>
+      
    </>
   );
 }

@@ -1,13 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-
-
-Navbar.propTypes = {
-    title: PropTypes.string.isRequired,
-    aboutText:PropTypes.string.isRequired
-}
-
 export default function Navbar(props) {
   return (
     <div>
@@ -23,7 +16,7 @@ export default function Navbar(props) {
           <a className="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">{props.abouText}</a>
+          <a className="nav-link" href="/">{props.aboutText}</a>
         </li>
         
         <li className="nav-item">
@@ -41,11 +34,15 @@ export default function Navbar(props) {
   )
 
 }
+Navbar.propTypes = {
+  title: PropTypes.string,
+  aboutText: PropTypes.string
+}
 
 Navbar.defaultProps = {
-    title:'Set title here',
-    aboutText:'About text here'
-};
+  title: 'Set title here',
+  aboutText: 'About text here'
+}
   
 
 
