@@ -28,6 +28,7 @@ export default function TextForm(props) {
         ></textarea>
       </div>
       <button className="btn btn-primary" onClick={handleUpClick}>Convert to Uppercase</button>
+       
       <div className="container my-3">
         <h2>Your text summary</h2>
         <p>{text.split(" ").length} words and {text.length} characters</p>
